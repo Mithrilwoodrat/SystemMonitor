@@ -64,6 +64,8 @@ class Meter(QtGui.QWidget):
         self.drawScaleNum()
         self.drawNumbericValue()
         self.drawPointer()
+        self.painter.end()
+        
     def setValue(self,updatefun):
         self.value = updatefun()
         
